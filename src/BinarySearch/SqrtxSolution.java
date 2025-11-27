@@ -14,8 +14,25 @@ public class SqrtxSolution {
         return 1;
     }
 
+    public int bnarySearcSqrt(int[] searchArray, int sqrtNo){
+        //binary search to find number in array when squared gives target
+        int start = 0;
+        int end = searchArray.length - 1;
 
+        while (start<=end){
+            int middle = start + ((end -start)/2);
 
+            if((searchArray[middle] * searchArray[middle]) > sqrtNo){
+                end  = middle - 1;
+            } else if ((searchArray[middle] * searchArray[middle]) < sqrtNo) {
+                start = middle +1;
+            }else {
+                return searchArray[middle];
+            }
+        }
+
+        return -1;
+    }
 }
 
 
