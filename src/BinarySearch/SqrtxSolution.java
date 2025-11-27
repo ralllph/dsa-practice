@@ -32,7 +32,8 @@ public class SqrtxSolution {
             }
         }
 
-        return -1;
+        //end holds the closes value to the squaree root after iteration terminates
+        return searchArray[end];
     }
 }
 
