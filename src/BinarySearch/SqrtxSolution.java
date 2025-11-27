@@ -11,10 +11,11 @@ public class SqrtxSolution {
             searchArray[i] = i+1;
         }
 
-        return 1;
+        //search square root with binary search
+        return binarySearchSqrt(searchArray,8);
     }
 
-    public int bnarySearcSqrt(int[] searchArray, int sqrtNo){
+    public static  int binarySearchSqrt(int[] searchArray, int sqrtNo){
         //binary search to find number in array when squared gives target
         int start = 0;
         int end = searchArray.length - 1;
@@ -25,7 +26,7 @@ public class SqrtxSolution {
             if((searchArray[middle] * searchArray[middle]) > sqrtNo){
                 end  = middle - 1;
             } else if ((searchArray[middle] * searchArray[middle]) < sqrtNo) {
-                start = middle +1;
+                start = middle + 1;
             }else {
                 return searchArray[middle];
             }
