@@ -2,10 +2,6 @@ package src.BinarySearch.MissingNumberProblem;
 
 public class MissingNumberSolution {
 
-    public int missingNumber(int[] nums){
-        return searchMissingNumber(nums);
-    }
-
     public static int searchMissingNumber(int[] arrayWithNumbers){
         int arrayLength = arrayWithNumbers.length;
         int start  = 0;
