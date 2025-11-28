@@ -8,8 +8,9 @@ public class MissingNumberSolution {
         int end = arrayLength - 1;
         int numberFound = 0;
 
-        for(int i=0; i<arrayLength; i++){
+        for(int i=0; i<=arrayLength; i++){
 
+            if(i < arrayLength) {
                 int target = arrayWithNumbers[i];
 
                 while (start <= end) {
@@ -18,11 +19,13 @@ public class MissingNumberSolution {
                         end = middle - 1;
                     } else if (middle < target) {
                         start = middle + 1;
-                    }else{
+                    } else {
                         break;
                     }
 
                 }
+
+            }
 
 
              numberFound = i;
