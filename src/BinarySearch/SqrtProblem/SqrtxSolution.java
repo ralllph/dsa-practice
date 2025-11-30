@@ -1,4 +1,4 @@
-package src.BinarySearch;
+package src.BinarySearch.SqrtProblem;
 
 import java.util.Arrays;
 
