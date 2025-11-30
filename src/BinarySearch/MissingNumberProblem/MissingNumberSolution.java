@@ -9,6 +9,11 @@ public class MissingNumberSolution {
         //sort array
         Arrays.sort(arrayWithNumbers);
         int start = 0;
+        int end = arrayWithNumbers.length;
+
+        while(start <end){
+
+        }
     }
 
 }
