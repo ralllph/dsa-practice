@@ -3,6 +3,7 @@ package src.BinarySearch.MissingNumberProblem;
 public class MissingNumberSolution {
 
     public static int searchMissingNumber(int[] arrayWithNumbers){
+        //changing attempt , sorting array first
         int arrayLength = arrayWithNumbers.length;
         int numberFound = 0;
         boolean isFound = false;
