@@ -5,6 +5,17 @@ public class FirstBadVersionSolution {
         int start  = 0;
         int end = n;
 
-        while(start)
+        while(start < end){
+            int middle = start + ((end-start)/2);
+            //error here due to lack of access of class extended for function isBadVerion  on leetcode
+            if(isBadVersion(middle) ){
+                end = middle;
+            }else{
+                start = middle + 1;
+            }
+        }
+
+        return start;
+
     }
 }
