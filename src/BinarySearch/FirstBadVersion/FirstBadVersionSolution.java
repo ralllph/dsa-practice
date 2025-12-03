@@ -18,4 +18,10 @@ public class FirstBadVersionSolution {
         return start;
 
     }
+
+    //creating random function for isBad to prevent error
+    public static boolean isBadVersion(int num){
+        return num > 5;
+    }
+
 }
