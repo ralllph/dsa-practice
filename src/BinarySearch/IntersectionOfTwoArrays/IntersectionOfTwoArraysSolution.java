@@ -12,4 +12,12 @@ public class IntersectionOfTwoArraysSolution {
         }
 
     }
+
+    public int[] arrayIntersection(int[] large, int[] smaller){
+        int[] arrayIntersection = {};
+        for(int i = 0;  i<smaller.length; i++){
+
+        }
+
+    }
 }
