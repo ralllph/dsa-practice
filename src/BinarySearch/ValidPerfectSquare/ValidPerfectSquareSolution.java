@@ -6,11 +6,13 @@ public class ValidPerfectSquareSolution {
         int start = 1;
         int end = num/2;
 
+
         while(start<= end){
             int middle = start + ((end-start)/2);
-            if(middle * middle > num){
+            long middleSquared = (long) middle * middle;
+            if(middleSquared > num){
                 end = middle -1;
-            }else if(middle * middle < num){
+            }else if(middleSquared < num){
                 start = middle + 1;
             }else{
                 return true;
