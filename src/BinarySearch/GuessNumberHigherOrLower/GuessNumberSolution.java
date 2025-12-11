@@ -31,4 +31,15 @@ public class GuessNumberSolution {
 
     }
 
+    //creating mock guess function
+    public int guess(int number){
+        if (number % 2 == 0){
+            return 0;
+        }else if(number%2 == 1){
+            return -1;
+        }else{
+            return 1;
+        }
+    }
+
 }
